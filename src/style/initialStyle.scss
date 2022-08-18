@@ -1,0 +1,145 @@
+@import "./mixin.scss";
+@import "./variables.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none; 
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1 {
+    @include Raleway-Medium-xxl;
+    color: $white;
+    @media(max-width:1024px) {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 500;
+    }
+    @media (max-width:768px) {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 100;
+    }
+}
+
+h2 {
+    @include Raleway-Regular-xl;
+    @media(max-width:1024px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    @media (max-width:768px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+h4 {
+    @include OpenSans-normal-m;
+    @media(max-width:1024px) {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+p {
+    @include Raleway-Regular-s;
+    @media(max-width:1024px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    @media (max-width:768px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.block {
+    @include flex-between;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    @media (max-width:768px) {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        align-items: center
+    }
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    padding: 54px 0;
+    position: relative;
+    @media(max-width:1024px) {
+        padding: 46px 0;
+    }
+    @media (max-width:768px) {
+        
+    }
+}
+
+.title:after {
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 2px;
+    background: $paleRed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media(max-width:1024px) {
+        width: 144px;
+    }
+    @media (max-width:768px) {
+        width: 134px;
+    }
+}
+
+.subtitle {
+    color: $grey;
+    margin-top: 40px;
+}
+
+.button {
+    text-align: center;
+    width: 270px;
+    outline: 2px solid $white;
+    padding: 14.5px 0;
+    transition: 0.3s;
+    cursor: pointer;
+    @media(max-width:1024px) {
+        width: 183px;
+        padding: 11px 0;
+    }
+    @media(max-width:768px) {
+        width: 288px;
+        margin: 50px auto;
+    }
+    &:hover {
+        outline: 2px solid $paleRed;
+    }
+    &:active {
+        background-color: $burgundy;
+        outline: 2px solid $burgundy;
+    }
+    &_btn {
+        @include OpenSans-SemiBold-s;
+        color: $white;
+    }
+}
+
+
+

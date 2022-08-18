@@ -1,0 +1,72 @@
+@mixin OpenSans-SemiBold-xs {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: $fs-xs;
+    line-height: $lh-xs; 
+}
+@mixin OpenSans-SemiBold-s {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: $fs-s;
+    line-height: $lh-mm; 
+}
+@mixin OpenSans-SemiBold-xs {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: $fs-xs;
+    line-height: $lh-xs; 
+}
+
+@mixin OpenSans-normal-l {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $fs-l;
+    line-height: $lh-l;   
+}
+  
+@mixin OpenSans-normal-m {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $fs-m;
+    line-height: $lh-m;   
+}
+  
+@mixin Raleway-Regular-xl {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fs-xl;
+    line-height: $lh-xl;
+}
+@mixin Raleway-Regular-s {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fs-s;
+    line-height: $lh-s;
+}
+@mixin Raleway-Regular-xl {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $fs-xl;
+    line-height: $lh-xl;
+}
+  
+@mixin Raleway-Medium-xxl {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fs-xxl;
+    line-height: $lh-xxl;
+}
+  
+@mixin flex-between {
+    display: flex;  
+    justify-content: space-between;
+}

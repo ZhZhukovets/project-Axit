@@ -1,0 +1,52 @@
+.design{
+    position: relative;
+    background-image: url(../img/img/city-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0; 
+    &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+}
+.content.design_item{
+    z-index: 2;
+    position: relative;
+}
+.title.design_title{
+    color: $white;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 170px;
+        height: 2px;
+        background: $white;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+}
+.subtitle.design_subtitle{
+    color: $white;
+    margin-bottom: 73px;
+    @media(max-width:1024px) {
+        margin: 32px 0;
+    }
+}
+.design_btn {
+    margin: 0 auto;
+    width: 370px;
+    @media(max-width:1024px) {
+        width: 318px;
+        padding: 14.5px;
+    }
+    @media(max-width:1024px) {
+        width: 288px;
+    }
+}

@@ -1,0 +1,42 @@
+.social {
+    background: #F8EFEF;
+    &_content {
+        @include flex-between;
+        @media(max-width:600px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &__text {
+            &_title {
+                padding: 14.5px 0;
+            }
+            &_subtitle {
+                color: $grey;
+                margin: 18px 0;
+            }
+        }
+        &__icon {
+            width: 59%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media(max-width:768px) {
+                width: 100%;
+                margin: 25px 0;
+            }
+            & a img {
+                @media(max-width:1024px) {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            & a img {
+                @media(max-width:768px) {
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+        }
+    }
+}

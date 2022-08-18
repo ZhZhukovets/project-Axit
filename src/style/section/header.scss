@@ -1,0 +1,88 @@
+@import "../mixin.scss";
+.header {
+    background: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    position: relative;
+    @media (max-width:600px) {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+}
+.header_content {
+    @include flex-between;
+    z-index: 6;
+    position: relative;
+    align-items: center;
+    @media (max-width:768px) {
+        border: none;
+    }
+    &__logo{
+        @media (max-width:1024px) {
+            &_img{
+                width: 170px;
+                height: 76px;
+            }
+        }
+        @media (max-width:768px) {
+            &_img{
+                width: 130px;
+                height: 56px;
+            }
+        }     
+    }
+}
+.header_nav{
+    width: 70%;
+    @media (max-width:600px) {
+        display: none;
+    }
+    &__list{
+        display: flex;
+        justify-content: flex-end;         
+        .nav__list{
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            cursor: pointer;
+            text-transform: capitalize;
+            padding: 28px 0 28px;
+            .list{
+                @include OpenSans-SemiBold-s;
+                position: relative;
+                z-index: 2;
+                font-weight: bold;
+                color: $white;
+                
+                @media (max-width:768px) {
+                    font-size: 14px;
+                }
+            }
+            &:hover {
+                background: $paleRed;
+            }
+            &:active {
+                background: $burgundy;
+            }
+            @media (max-width:1024px) {
+                width: 20%;
+                &::after{
+                    bottom: -43px;
+                }
+            }
+            @media (max-width:768px) {
+            &::after{
+                bottom: -31px;
+                }   
+            }                             
+        }            
+    }
+} 
+.burger-menu_nav__list.active a{
+    color: $burgundy;
+}
+.burger-menu_link:active{
+    color: $burgundy;
+}

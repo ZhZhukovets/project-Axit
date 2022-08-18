@@ -1,0 +1,33 @@
+.awesome{
+    padding: 50px 0 58px;
+    &_content__item {
+        width: 33%;
+        @media(max-width:768px) {
+            width: 70%;
+        }
+    }
+}
+.block.awesome_block {
+    text-align: center;
+}
+.subtitle.awesome_subtitle{
+    margin-bottom: 71px;
+    @media(max-width:1024px) {
+        margin: 32px 0;
+    }
+}
+
+.awesome_content__item img{
+    @media(max-width:768px) {
+        width: 147px;
+        height: 147px;
+    }
+}
+.awesome_content__item_title{
+    padding: 38px 0;
+    margin-bottom: 8px;
+    @media(max-width:1024px) {
+        padding: 28.5px 0;
+        margin-bottom: 17px;
+    }
+}

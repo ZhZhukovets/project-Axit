@@ -1,0 +1,60 @@
+.customers{
+    padding: 50px 0 64px;
+    @media(max-width:768px) {
+        padding: 50px 0 0 ;
+    }
+    &_subtitle {
+        margin-bottom: 83px;
+        @media(max-width:1024px) {
+            margin: 32px 0;
+        }
+    }
+    &_block {
+        &__text {
+            background: #E2E2E2;
+            color: #86878B;
+            border-radius: 10px;
+            padding: 38px 20px 37px;
+            position: relative;
+            &::after{
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-top: 20px solid #E2E2E2;
+                position: absolute;
+                top: 100%;
+                left: 70px;
+            }
+            @media(max-width:1024px) {
+                padding: 50px 30px; 
+            }
+        }
+        &__person{
+            display: flex;
+            text-align: start;
+            margin-top: 66px;
+            @media(max-width:768px) {
+                margin-top: 33px
+            }
+            &_info{
+                margin-left: 30px;
+            }
+            &_img img{
+                @media(max-width:1024px) {
+                    width: 63px;
+                    height: 63px;
+                }
+            }
+        }
+        &__name{
+            padding: 10.5px 0;
+            margin-bottom: 15px;
+            @media(max-width:1024px) {
+                padding: 5.5px 0;
+                margin-bottom: 9px;
+            }
+        }
+    }
+}

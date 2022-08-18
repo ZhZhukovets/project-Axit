@@ -1,0 +1,37 @@
+.footer{
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    &_content{
+        text-align: center;
+        width: 100%;
+        &__icon{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            padding: 35px 0 25px;
+            @media(max-width:1024px) {
+                padding: 33px 0 36px;
+            }
+            & img {
+                @media(max-width:1024px) {
+                    width: 45px;
+                    height: 45px;
+                }
+                @media(max-width:650px) {
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+        }
+        &__text{
+            color: rgba(255, 255, 255, 0.5);
+            padding-bottom: 25px;
+            @media(max-width:1024px) {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}

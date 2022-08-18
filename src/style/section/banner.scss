@@ -1,0 +1,138 @@
+.banner {
+    position: relative;
+    background-image: url(../img/banner/city.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 207px 0 185px;
+    @media(max-width:1024px) {
+        padding: 137px 4px 132px 99px;
+    }
+    @media(max-width:768px) {
+        padding: 84px 1px 50px;
+    }
+    @media(max-width:600px) {
+        padding: 164px 1px 50px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    &_content {
+        width: 57%;
+        @media(max-width:1024px) {
+            width: 51%;
+        }
+        @media(max-width:768px) {
+            width: 100%;
+        }
+        & img {
+            @media(max-width:768px) {
+                display: none;
+            }
+        }
+        @media(max-width:768px) {
+        }
+        &__title {
+            margin: 55px 0 97px;
+            position: relative;
+            @media(max-width:1024px) {
+                margin-top: 38px;
+            }
+            &::after{
+                content: "";
+                width: 170px;
+                margin-top: 55px;
+                display: block;
+                outline:  1px solid $white;
+                @media(max-width:1024px) {
+                    width: 115px;
+                    margin-top: 41px;
+                }
+                @media (max-width: 768px) {
+                    position: absolute;
+                    content: "";
+                    color: $white;
+                    width: 134px;
+                    height: 1px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }    
+        &__subtitle {
+            color: $white;
+            max-width: 270px;
+            margin: 0 0 42px;
+            @media(max-width:1024px) {
+                margin: 31px 0;
+            }
+            @media(max-width:768px) {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+    &_form {
+        background: $white;
+        border-radius: 10px;
+        max-height: 406px;
+        &__title {
+            text-align: center;
+            padding: 33px;
+            @media(max-width:1024px) {
+                padding: 11px 0;
+            }
+            & span {
+                color: $paleRed;
+            }
+        }
+        &__input {
+            max-width: 470px;
+            text-align: center;
+            padding: 45px 0 42px;
+            @media(max-width:1024px) {
+                max-width: 398px;
+            }
+             
+        }
+        &__btn {
+            @include OpenSans-SemiBold-xs;
+            width: 100%;
+            color: $white;
+            background: $paleRed;
+            border: none;
+            border-radius: 0px 0px 10px 10px;
+            padding: 22.5px;
+            cursor: pointer;
+            transition: 0.3s;
+            @media(max-width:1024px) {
+                padding: 20px 0;
+            }
+            &:hover {
+                background: $burgundy;
+            }
+            &:active {
+                background: $paleRed;
+            }
+        }
+    }
+}
+.form__input_text {
+    @include OpenSans-SemiBold-xs;
+    height: 38px;
+    width: 85%;
+    border: none;
+    border-bottom: 1px solid $input;
+    margin-bottom: 33px;
+    padding-bottom: 16px;
+    outline: none; 
+    &::-webkit-input-placeholder { 
+        color: $input;
+    }
+}
+
